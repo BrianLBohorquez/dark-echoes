@@ -1,0 +1,44 @@
+body {
+  margin: 0;
+  background-color: #111;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+main {
+  display: grid;
+  gap: 2rem;
+  padding: 1.5rem;
+}
+
+@media (min-width: 48rem) {
+  main {
+    grid-template-columns: 1fr 2fr;
+  }
+
+  h1 {
+    grid-column: 1 / -1;
+  }
+}
+
+.episodes ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.episodes li {
+  padding: 0.75rem;
+  border-bottom: 0.1rem solid #333;
+}
+
+.episodes li:hover,
+.episodes li.selected {
+  background-color: #333;
+}
+
+.details button {
+  width: 100%;
+  padding: 0.5rem;
+  font-size: 1rem;
+}
